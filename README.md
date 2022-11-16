@@ -36,6 +36,21 @@ yang berisi genap/ganjil sesuai nilai `_isEven` serta mengubah warna teks dengan
 4. Membuat tampilan `FloatingActionButton` dan _logic_ ketika `_counter_` kurang dari nol
 5. Mengatur posisi  `FloatingActionButton` dengan memanfaatkan widget `Container`, `Column`, dan `Row`.
 
+# Tugas 8: Flutter Form
+
+### Perbedaan `Navigator.push` dan `Navigator.pushReplacement`
+- `Navigator.push`: digunakan untuk menambahkan rute lain ke atas tumpukan screen (stack) saat ini. Halaman baru ditampilkan di atas halaman sebelumnya.
+- `Navigator.pushReplacement`: digunakan untuk menambahkan rute baru, tetapi rute yang baru akan menggantikan rute sebelumnya.
+
+### Widget yang digunakan
+- `Drawer`: widget yang menyediakan sebuah panel yang dapat dimunculkan dan disembunyikan di samping layar. Digunakan sebagai navigasi
+- `Form`: widget untuk menampilkan formulir yang digunakan sebagai input dari user
+- `DropdownButton`: widget berupa seperti button yang ketika diklik akan memunculkan beberapa pilihan. Bisa digunakan untuk pilihan input user atau menampilkan menu output
+- `TextButton`: widget berupa button yang memiliki tulisan dan dapat diberi event
+- `TextFormField`: widget yang dapat menerima input text
+- `ListTile`: 
+- `ListView`: widget berupa linear array yang menampung widget dan dapat di-scroll
+
 # Counter_7
 
 A new Flutter project.
