@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lab/drawer.dart';
-import 'package:lab/budget.dart';
+import 'package:lab/util/drawer.dart';
+import 'package:lab/model/budget.dart';
 
 class MyFormPage extends StatefulWidget {
   const MyFormPage({super.key});
@@ -23,6 +23,7 @@ class _MyFormPageState extends State<MyFormPage> {
       appBar: AppBar(
         title: const Text("Form Budget"),
       ),
+      drawer: const DrawerWidget(),
       body: Form(
         key: _formKey,
         child: Container(

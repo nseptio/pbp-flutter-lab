@@ -66,6 +66,33 @@ Widget Navigator di Flutter digunakan untuk mempertahankan tumpukan rute stack d
 3. Menambahkan class untuk _blueprint_ objek budget dengan membuat file baru `budget.dart`. Class Budget berisi attribut budget seperti judul, nominal, jenis, dan date, dan array list untuk menampung semua data budgets.
 4. Menambahkan file baru (data.dart) untuk menampilkan data budget yang telah di-input melalui form dan disimpan dalam array list budgets.
 
+# Tugas 9: Integrasi Web Service pada Flutter
+
+### Pengambilan Data JSON
+Pengambilan data JSON dapat dilakukan tanpa membuat model terlebih dahulu. Namun, tanpa model, data yang didapat dari JSON menjadi kurang representatif dan sulit diolah dengan baik. Oleh karena itu, sebaiknya membuat model terlebih dahulu untuk mendapatkan data JSON yang lebih baik karena dapat merepresentasikan data dan struktur data apa yang akan diterima saat melakukan pengambilan data JSON agar sesuai dengan _response_ yang diterima.
+
+### Widget yang digunakan
+- `FutureBuilder`: widget yang digunakan untuk menampilkan data yang didapat dari pengambilan data JSON
+- `Expanded`: widget yang digunakan untuk memperluas widget yang ada di dalamnya
+- `Link`: widget yang digunakan untuk membuat hyperlink
+- `MouseRegion`: widget yang digunakan untuk mendeteksi pergerakan mouse
+- `GestureDetector`: widget yang digunakan untuk mendeteksi gesture
+- `Checkbox`: widget yang digunakan untuk membuat checkbox
+- `CircularProgressIndicator`: widget yang digunakan untuk menampilkan indikator loading
+
+### Mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter
+1. Depedensi `http` Flutter dapat melakukan HTTP request seperti GET
+2. Setelah membuat model class, data JSON akan dikonversi menjadi objek sesuai model class
+3. Menampilkan data dengan `FutureBuilder`
+
+### Implementasi Tugas 9
+1. Melakukan refactor menjadi 3 folder, yaitu `model`, `page`, dan `util`
+2. Membuat model class `Mywatchlist.dart` untuk menampung data JSON menggunakan website Quicktype
+3. Membuat file `fetchmywatchlist.dart` untuk melakukan fetch data JSON dengan class Future
+4. Membuat file `mywatchlist.dart` di folder page untuk menampilkan seluruh judul watchlist di halaman mywatchlist. Setiap judul watchlist ditampilkan dengan widget Card
+5. Membuat detail untuk setiap judul di watchlist dengan membuat file `mywatchlistdetail.dart` yang berisi judul, release date, rating, status tonton, review. Jika status belum ditonton, isi review akan berisi link menuju review MyAnimeList.
+
+
 # Counter_7
 
 A new Flutter project.
